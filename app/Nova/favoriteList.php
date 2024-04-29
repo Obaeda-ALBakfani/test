@@ -44,8 +44,8 @@ class favoriteList extends Resource
     {
         return [
             ID::make()->sortable(),
-            BelongsTo::make('Passenger', 'Passenger', FavoriteList::class),
-            BelongsTo::make( 'Service' ,  'Service' , FavoriteList::class),
+            BelongsTo::make('Passenger', 'Passenger', Passenger::class),
+            BelongsTo::make( 'Service' ,  'Service' , Service::class),
         ];
     }
 
