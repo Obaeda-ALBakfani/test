@@ -11,7 +11,7 @@ use App\Nova\User;
 
 
 class Report extends Resource
-{
+{ 
     /**
      * The model the resource corresponds to.
      *
@@ -96,3 +96,4 @@ class Report extends Resource
         return [];
     }
 }
+ 
