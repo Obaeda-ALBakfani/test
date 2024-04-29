@@ -4,7 +4,8 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
-
+use App\Models\Passenger;
+use App\Models\Service;
 
 class FavoriteList extends Model
 {
@@ -17,7 +18,7 @@ class FavoriteList extends Model
 
     public function Passenger()
     {
-        return $this->BelongsTo(Passenger::Class);
+        return $this->BelongsTo(Passenger::class);
     }
 
     public function Service()
